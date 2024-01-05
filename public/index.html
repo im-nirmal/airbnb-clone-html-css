@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body >
+    <header>
+    <!-- Navbar -->
+        <div class="grid grid-cols-3 px-16 w-screen h-20 border-b-[1px] items-center fixed top-0 bg-white">
+            <img src="./images/airbnb-logo.png" alt="no-image" class="h-16 w-28 ">
+            <img src="./images/airbnb_small-logo.png" alt="" class="lg:hidden sm:h-12">
+            <div class="flex justify-evenly items-center border rounded-full shadow-md h-12 w-96">
+                <button class="border-r-2 text-sm font-medium px-4">Anywhere</button>
+                <button class="border-r-2 text-sm font-medium px-4">Any week</button>
+                <button class="text-sm font-medium text-gray-500 px-4">Add Guests</button>
+                <i class="fa-solid fa-magnifying-glass bg-red-500 text-white rounded-full p-2"></i>
+            </div>
+
+            <div class="flex justify-end items-center gap-8">
+                <button class="text-sm font-medium">Airbnb your home</button>
+                <span class="material-symbols-outlined">
+                    language
+                    </span>
+                <div class="flex justify-evenly items-center gap-2 rounded-full border shadow-md h-10 w-20 ">
+                        <i class="fa-solid fa-bars"></i>
+                        <i class="fa-solid fa-user  "></i>
+                </div>   
+            </div>
+        </div>
+     <!-- Category Bar -->
+     <div class="flex items-center h-24 space-x-5 top-20 fixed bg-white w-screen">
+        <div class="flex items-center justify-center space-x-10">
+            <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2 pl-16">
+                <img src="./images/item1.jpg" alt="no-image" class="h-6 w-6"/>
+                <p class="text-xs font-normal">Lakefront</p>  
+            </div>
+
+            <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2 ">
+                <img src="./images/item2.jpg" alt="no-image" class="h-6 w-6"/>
+                <p class="text-xs font-normal">Treehouses</p>  
+            </div>
+            <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2 ">
+                <img src="./images/item3.jpg" alt="no-image" class="h-6 w-6"/>
+                <p class="text-xs font-normal">Amazing pools</p>  
+            </div>
+            <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2 ">
+                <img src="./images/item4.jpg" alt="no-image" class="h-6 w-6"/>
+                <p class="text-xs font-normal">Rooms</p>  
+            </div>
+            <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2 ">
+                <img src="./images/item5.jpg" alt="no-image" class="h-6 w-6"/>
+                <p class="text-xs font-normal">Bed & breakfasts</p>  
+            </div>
+            <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2 ">
+                <img src="./images/item6.jpg" alt="no-image" class="h-6 w-6"/>
+                <p class="text-xs font-normal">Farms</p>  
+            </div>
+            <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2 ">
+                <img src="./images/item7.jpg" alt="no-image" class="h-6 w-6"/>
+                <p class="text-xs font-normal">Amazing views</p>  
+            </div>
+            <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2 ">
+                <img src="./images/item8.jpg" alt="no-image" class="h-6 w-6"/>
+                <p class="text-xs font-normal">Luxe</p>  
+            </div>
+            <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2 ">
+                <img src="./images/item9.jpg" alt="no-image" class="h-6 w-6"/>
+                <p class="text-xs font-normal">Top of the world</p>  
+            </div>
+            <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2 ">
+                <img src="./images/item10.jpg" alt="no-image" class="h-6 w-6"/>
+                <p class="text-xs font-normal">Tiny homes</p>  
+            </div>
+            <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2 ">
+                <img src="./images/item11.jpg" alt="no-image" class="h-6 w-6"/>
+                <p class="text-xs font-normal">Mansions</p>  
+            </div>
+            <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2 ">
+                <img src="./images/item12.jpg" alt="no-image" class="h-6 w-6"/>
+                <p class="text-xs font-normal">Earth homes</p>  
+            </div>
+        </div>
+
+
+        <span class="material-symbols-outlined pl-4">
+            arrow_circle_right
+            </span>
+        <div class="flex justify-around items-center rounded-xl shadow-md h-12 w-24 border">
+            <span class="material-symbols-outlined pl-2">
+                tune
+                </span>
+            <p class="text-xs font-medium pr-2">Filters</p>
+        </div>
+
+        <!-- Price Bar -->
+        <div class="flex justify-around items-center rounded-xl shadow-md border h-12 w-[200px]">
+            <p class="text-xs font-medium">Display total before taxes</p>
+            <span class="material-symbols-outlined ">
+                toggle_off
+                </span>
+        </div>
+     </div>
+        
+     
+    </header>
+    <!-- Hotel -->
+    <main class="mt-48 mx-16">
+        <div class="grid grid-cols-4">
+            <div class="flex flex-col h-96 w-72">
+                <img src="./images/img1.webp" alt="" class="w-72 h-64 rounded-xl">
+                <p class="mt-2 text-sm font-medium">Nainital, India</p>
+                <p class="text-sm text-gray-400">Naini Lake</p>
+                <p class="text-sm text-gray-400">7-12 Jan</p>
+                <p class="text-sm font-medium mt-2">₹8,510 night</p>
+            </div>
+
+            <div class="flex flex-col h-96 w-72">
+                <img src="./images/img2.webp" alt="" class="w-72 h-64 rounded-xl">
+                <p class="mt-2 text-sm font-medium">Bhimtal, India</p>
+                <p class="text-sm text-gray-400">Bhimtal Lake</p>
+                <p class="text-sm text-gray-400">7-12 Jan</p>
+                <p class="text-sm font-medium mt-2">₹14,149 night</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                <img src="./images/img3.webp" alt="" class="w-72 h-64 rounded-xl">
+                <p class="mt-2 text-sm font-medium">Bhimtal, India</p>
+                <p class="text-sm text-gray-400">Ram tal</p>
+                <p class="text-sm text-gray-400">2-7 Jan</p>
+                <p class="text-sm font-medium mt-2">₹2,342 night</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                <img src="./images/img4.webp" alt="" class="w-72 h-64 rounded-xl">
+                <p class="mt-2 text-sm font-medium">Bhimtal, India</p>
+                <p class="text-sm text-gray-400">Bhimtal Lake</p>
+                <p class="text-sm text-gray-400">6-12 Jan</p>
+                <p class="text-sm font-medium mt-2">₹,5280 night</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                <img src="./images/img5.webp" alt="" class="w-72 h-64 rounded-xl">
+                <p class="mt-2 text-sm font-medium">Bhimtal, India</p>
+                <p class="text-sm text-gray-400">Bhimtal Lake</p>
+                <p class="text-sm text-gray-400">7-11 Jan</p>
+                <p class="text-sm font-medium mt-2">₹8,599 night</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                <img src="./images/img6.webp" alt="" class="w-72 h-64 rounded-xl">
+                <p class="mt-2 text-sm font-medium">Bhimtal, India</p>
+                <p class="text-sm text-gray-400">Bhimtal Lake</p>
+                <p class="text-sm text-gray-400">7-12 Jan</p>
+                <p class="text-sm font-medium mt-2">₹21,567 night</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                <img src="./images/img7.webp" alt="" class="w-72 h-64 rounded-xl">
+                <p class="mt-2 text-sm font-medium">Nainital, India</p>
+                <p class="text-sm text-gray-400">Naini Lake</p>
+                <p class="text-sm text-gray-400">7-12 Jan</p>
+                <p class="text-sm font-medium mt-2">₹33,551 night</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                <img src="./images/img8.webp" alt="" class="w-72 h-64 rounded-xl">
+                <p class="mt-2 text-sm font-medium">Nainital, India</p>
+                <p class="text-sm text-gray-400">Naini Lake</p>
+                <p class="text-sm text-gray-400">7-12 Jan</p>
+                <p class="text-sm font-medium mt-2">₹9,840 night</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                <img src="./images/img9.webp" alt="" class="w-72 h-64 rounded-xl">
+                <p class="mt-2 text-sm font-medium">Khurpatal, India</p>
+                <p class="text-sm text-gray-400">Kurpa Tal</p>
+                <p class="text-sm text-gray-400">5-10 Jan</p>
+                <p class="text-sm font-medium mt-2">₹10,200 night</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                <img src="./images/img10.webp" alt="" class="w-72 h-64 rounded-xl">
+                <p class="mt-2 text-sm font-medium">Ooty, India</p>
+                <p class="text-sm text-gray-400">Tiger Hill Lake Reserved Area</p>
+                <p class="text-sm text-gray-400">7-12 Jan</p>
+                <p class="text-sm font-medium mt-2">₹8,510 night</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                <img src="./images/img11.webp" alt="" class="w-72 h-64 rounded-xl">
+                <p class="mt-2 text-sm font-medium">Bengaluru, India</p>
+                <p class="text-sm text-gray-400">Ambalipura Lake Lake</p>
+                <p class="text-sm text-gray-400">10-15 Jan</p>
+                <p class="text-sm font-medium mt-2">₹2,999 night</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                <img src="./images/img12.webp" alt="" class="w-72 h-64 rounded-xl">
+                <p class="mt-2 text-sm font-medium">Yercaud, India</p>
+                <p class="text-sm text-gray-400">Yercaud Lake</p>
+                <p class="text-sm text-gray-400">7-12 Jan</p>
+                <p class="text-sm font-medium mt-2">₹3,432 night</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                <img src="./images/img13.webp" alt="" class="w-72 h-64 rounded-xl">
+                <p class="mt-2 text-sm font-medium">Wayanad, India</p>
+                <p class="text-sm text-gray-400">Karalad Chira</p>
+                <p class="text-sm text-gray-400">5-10 Jan</p>
+                <p class="text-sm font-medium mt-2">₹5306 night</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                <img src="./images/img14.webp" alt="" class="w-72 h-64 rounded-xl">
+                <p class="mt-2 text-sm font-medium">Bengaluru, India</p>
+                <p class="text-sm text-gray-400">Hosakere</p>
+                <p class="text-sm text-gray-400">1-6 feb</p>
+                <p class="text-sm font-medium mt-2">₹1369 night</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                <img src="./images/img15.webp" alt="" class="w-72 h-64 rounded-xl">
+                <p class="mt-2 text-sm font-medium">Wayanad, India</p>
+                <p class="text-sm text-gray-400">Karalad Chira</p>
+                <p class="text-sm text-gray-400">7-12 Jan</p>
+                <p class="text-sm font-medium mt-2">₹4200 night</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                <img src="./images/img16.webp" alt="" class="w-72 h-64 rounded-xl">
+                <p class="mt-2 text-sm font-medium">Manguluru, India</p>
+                <p class="text-sm text-gray-400">Baggundi Lake</p>
+                <p class="text-sm text-gray-400">4-9 Feb</p>
+                <p class="text-sm font-medium mt-2">₹2321 night</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                <img src="./images/img17.webp" alt="" class="w-72 h-64 rounded-xl">
+                <p class="mt-2 text-sm font-medium">Wayanad, India</p>
+                <p class="text-sm text-gray-400">Karalad Chira</p>
+                <p class="text-sm text-gray-400">7-12 Jan</p>
+                <p class="text-sm font-medium mt-2">₹5306 night</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                <img src="./images/img18.webp" alt="" class="w-72 h-64 rounded-xl">
+                <p class="mt-2 text-sm font-medium">Wayanad, India</p>
+                <p class="text-sm text-gray-400">Karalad Chira</p>
+                <p class="text-sm text-gray-400">7-12 Jan</p>
+                <p class="text-sm font-medium mt-2">₹4566 night</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                <img src="./images/img19.webp" alt="" class="w-72 h-64 rounded-xl">
+                <p class="mt-2 text-sm font-medium">Bengaluru, India</p>
+                <p class="text-sm text-gray-400">Hosakere</p>
+                <p class="text-sm text-gray-400">1-6 Feb</p>
+                <p class="text-sm font-medium mt-2">₹4593 night</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                <img src="./images/img20.webp" alt="" class="w-72 h-64 rounded-xl">
+                <p class="mt-2 text-sm font-medium">Bengaluru, India</p>
+                <p class="text-sm text-gray-400">Vengayyana Lake</p>
+                <p class="text-sm text-gray-400">7-12 Jan</p>
+                <p class="text-sm font-medium mt-2">₹7988 night</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                <img src="./images/img21.webp" alt="" class="w-72 h-64 rounded-xl">
+                <p class="mt-2 text-sm font-medium">Ooty, India</p>
+                <p class="text-sm text-gray-400">Ooty Lake</p>
+                <p class="text-sm text-gray-400">7-12 Jan</p>
+                <p class="text-sm font-medium mt-2">₹5800 night</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                <img src="./images/img22.webp" alt="" class="w-72 h-64 rounded-xl">
+                <p class="mt-2 text-sm font-medium">Yercaud, India</p>
+                <p class="text-sm text-gray-400">Yercaud Lake</p>
+                <p class="text-sm text-gray-400">7-12 Jan</p>
+                <p class="text-sm font-medium mt-2">₹3432 night</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                <img src="./images/img23.webp" alt="" class="w-72 h-64 rounded-xl">
+                <p class="mt-2 text-sm font-medium">Karlad lake, India</p>
+                <p class="text-sm text-gray-400">Karalad Chira</p>
+                <p class="text-sm text-gray-400">7-13 Jan</p>
+                <p class="text-sm font-medium mt-2">₹1490 night</p>
+            </div>
+            <div class="flex flex-col h-96 w-72">
+                <img src="./images/img24.webp" alt="" class="w-72 h-64 rounded-xl">
+                <p class="mt-2 text-sm font-medium">Ooty, India</p>
+                <p class="text-sm text-gray-400">Ooty Lake</p>
+                <p class="text-sm text-gray-400">17-23 Jan</p>
+                <p class="text-sm font-medium mt-2">₹1369 night</p>
+            </div>
+
+        </div>
+
+
+        <!-- button -->
+        <div class="flex flex-col justify-center items-center border-b-2">
+            <p class="text-lg font-medium">Continue exploring lakefront homes</p>
+            
+            <button class="bg-black text-white rounded-lg px-6 py-2 text-lg font-medium mt-4 mb-4">Show more</button>
+        </div>
+
+    </main>
+
+
+    <!-- sub-footer -->
+    <div class="bg-slate-50">
+        <div class="grid grid-cols-3 mt-10 mx-16  border-b-2">
+            <div class="flex flex-col gap-2 mb-10">
+                <p class="text-base font-medium">Support</p>
+                <a href="" class="hover:underline">Help Centre</a>
+                <a href="" class="hover:underline">AirCover</a>
+                <a href="" class="hover:underline">Anti-discrimination</a>
+                <a href="" class="hover:underline">Disability Support</a>
+                <a href="" class="hover:underline">Cancellation Options</a>
+                <a href="" class="hover:underline">Report neighbourhood concern</a>
+            </div>
+    
+            <div class="flex flex-col gap-2 ">
+                <p class="text-base font-medium">Hosting</p>
+                <a href="" class="hover:underline">Airbnb your home</a>
+                <a href="" class="hover:underline">AirCover for Hosts</a>
+                <a href="" class="hover:underline">Hosting resources</a>
+                <a href="" class="hover:underline">Community forum</a>
+                <a href="" class="hover:underline">Hosting responsibly</a>
+                
+            </div>
+    
+            <div class="flex flex-col gap-2">
+                <p class="text-base font-medium">Airbnb</p>
+                <a href="" class="hover:underline">Newsroom</a>
+                <a href="" class="hover:underline">New features</a>
+                <a href="" class="hover:underline">Careers</a>
+                <a href="" class="hover:underline">Investors</a>
+                <a href="" class="hover:underline">Airbnb.org emergency stays</a>
+                
+            </div>
+    
+        </div>
+    
+        
+        <!-- last-footer -->
+        <footer class="flex justify-between h-12 items-center px-10 w-screen">
+            <div class="flex text-sm font-normal space-x-2">
+                <p>© 2024 Airbnb, Inc.</p>
+                <p>·</p>
+                <p>Privacy</p>
+                <p>.</p>
+                <p>Terms</p>
+                <p>.</p>
+                <p>Sitemap</p>
+                <p>.</p>
+                <p>Company details</p>
+            </div>
+    
+            <div class="flex space-x-4 text-sm font-medium">
+                <span class="material-symbols-outlined">
+                    language
+                    </span>
+                <p>English (IN)</p>
+                <p>₹ INR</p>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>
